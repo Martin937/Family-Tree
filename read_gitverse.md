@@ -27,9 +27,9 @@
 27.
 28. git remote set-url --add origin ssh://git@gitverse.ru:2222/<username>/<repository_name> Подключение по SSH не удаляя поключение по HTTPS
 29.
-30.
+30. https://gitverse.ru/Martin937/Family-Tree.git
 31.
-32.
+32. git remote set-url --add origin ssh://git@gitverse.ru:2222/Martin937/Family-Tree
 33.
 34.
 35.
@@ -46,7 +46,6 @@
 46.
 47.
 48.
-49.
 
 Популярные названия классов HTML/CSS
 Блоки
