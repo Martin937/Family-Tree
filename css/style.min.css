@@ -1,0 +1,28 @@
+#photos {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 85vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 16rem;
+  grid-row-gap: 20vh;
+}
+.photo {
+  opacity: 0;
+  width: 130px;
+  height: 130px;
+  overflow: hidden;
+  margin: auto;
+  border-radius: 50%;
+}
+.photo img {
+  width: 100%;
+  height: auto;
+}
+.animation-photo {
+  -webkit-animation: fade-photo 5s ease-in-out 1;
+  animation: fade-photo 5s ease-in-out 1;
+}

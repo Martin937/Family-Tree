@@ -1,0 +1,66 @@
+.floating {
+  overflow: hidden;
+  position: relative;
+}
+.floating__title {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: fade 10s linear 1;
+  z-index: 1;
+  width: 100%;
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 7rem;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 0 3px 0 #b2a98f, 0 14px 10px rgba(0, 0, 0, 0.15),
+    0 24px 2px rgba(0, 0, 0, 0.1), 0 34px 30px rgba(0, 0, 0, 0.1);
+}
+.floating__background {
+  background: url(../img/l_1.jpg) center center/contain repeat-x;
+  height: 100vh;
+  width: 5063px;
+  animation: floating_left 180s linear infinite;
+}
+.floating__birds,
+.floating__hare {
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+}
+.floating__birds img,
+.floating__hare img {
+  width: 100%;
+  height: auto;
+}
+.floating .birds1 {
+  position: absolute;
+  bottom: 66vh;
+  right: -10vw;
+  transform: translate(-50%, -50%);
+  animation: floating_left-top 7s 3s linear 1;
+}
+.floating .birds2 {
+  position: absolute;
+  bottom: 50vh;
+  right: 100vw;
+  transform: translate(-50%, -50%);
+  animation: floating_right-top 6s 10s linear 1;
+}
+.floating .hare1 {
+  position: absolute;
+  bottom: 0vh;
+  right: 75vw;
+  transform: translate(-50%, -50%);
+  animation: floating_left 180s linear infinite;
+}
+.floating .hare2 {
+  position: absolute;
+  bottom: 0vh;
+  right: -30vw;
+  transform: translate(-50%, -50%);
+  animation: floating_left 180s linear infinite;
+}
