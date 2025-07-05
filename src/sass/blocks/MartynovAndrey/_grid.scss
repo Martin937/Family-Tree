@@ -1,0 +1,183 @@
+.tree {
+  // --------------Мужчины рода---- \\
+  &__elem-Vnuk {
+    grid-column: 7 / 8;
+    grid-row: 1 / 2;
+  }
+  &__elem-Art {
+    background: url("../img/Martynovs/Artyom.jpg") center 20% / cover no-repeat;
+    // border-left: 2px solid yellow;
+    grid-column: 7 / 8;
+    grid-row: 3 / 4;
+  }
+  // ----Андрей, сестра---- \\
+  &__elem-Andr {
+    background: url("../img/Martynovs/Andrey_2.jpg") 40% 50% / cover no-repeat;
+    // border-left: 2px solid yellow;
+    grid-column: 7 / 8;
+    grid-row: 5 / 6;
+    &-Ira {
+      grid-column: 5/6;
+      grid-row: 5 / 6;
+    }
+  }
+  // ---- Николай, братья, сестры ---- \\
+  &__elem-Nik {
+    background: url("../img/Martynovs/b.png") center 0% / cover no-repeat;
+    // border-left: 2px solid yellow;
+    grid-column: 7 / 8;
+    grid-row: 7 / 8;
+    &-Alecs {
+      grid-column: 5 / 6;
+      grid-row: 7 / 8;
+    }
+    &-sister1 {
+      grid-column: 3 / 4;
+      grid-row: 7 / 8;
+    }
+    &-sister2 {
+      grid-column: 1 / 2;
+      grid-row: 7 / 8;
+    }
+  }
+  // ---- Гавриил, братья, сестры ---- \\
+  &__elem-Gavr {
+    background: url("../img/Martynovs/b.png") center 0% / cover no-repeat;
+    // border-left: 2px solid yellow;
+    grid-column: 7 / 8;
+    grid-row: 9 / 10;
+  }
+  // ---- Прадед, братья, сестры ---- \\
+  &__elem-Prad {
+    background: url("../img/Martynovs/b.png") center 0% / cover no-repeat;
+    // border-left: 2px solid yellow;
+    grid-column: 7 / 8;
+    grid-row: 11 / 12;
+  }
+  // -------Женщины рода--- \\
+  &__elem-vnuchka {
+    grid-column: 9 / 10;
+    grid-row: 1 / 2;
+  }
+  &__elem-Yana {
+    background: url("../img/Martynovs/Yana.jpg") center 0% / cover no-repeat;
+    grid-column: 9 / 10;
+    grid-row: 3 / 4;
+  }
+  &__elem-Tanya {
+    background: url("../img/Martynovs/Tanya.jpg") center 20% / cover no-repeat;
+    grid-column: 9 / 10;
+    grid-row: 5 / 6;
+  }
+  &__elem-Zina {
+    background: url("../img/Martynovs/p.png") center 0% / cover no-repeat;
+    grid-column: 9 / 10;
+    grid-row: 7 / 8;
+  }
+  &__elem_grandmother {
+    background: url("../img/Martynovs/p.png") center 0% / cover no-repeat;
+    grid-column: 9 / 10;
+    grid-row: 9 / 10;
+  }
+  &__elem_pra-grandmother {
+    background: url("../img/Martynovs/p.png") center 0% / cover no-repeat;
+    grid-column: 9 / 10;
+    grid-row: 11 / 12;
+  }
+  //--------------------Родственники жен -------\\
+  // ------Yana
+  &__elem-Yana {
+    &_mother {
+      grid-column: 11 / 12;
+      grid-row: 3 / 4;
+    }
+    &_father {
+      grid-column: 13 / 14;
+      grid-row: 3 / 4;
+    }
+    &_relatives {
+      grid-column: -2 / -1;
+      grid-row: 3 / 4;
+    }
+  }
+  //------Tanya
+  &__elem-Tanya_mother {
+    grid-column: 11 / 12;
+    grid-row: 5 / 6;
+  }
+  &__elem-Tanya_father {
+    grid-column: 13 / 14;
+    grid-row: 5 / 6;
+  }
+  &__elem-Tanya_relatives {
+    grid-column: -2 / -1;
+    grid-row: 5 / 6;
+  }
+
+  //------Zina
+  &__elem-Zina_mother {
+    grid-column: 11 / 12;
+    grid-row: 7 / 8;
+  }
+  &__elem-Zina_father {
+    grid-column: 13 / 14;
+    grid-row: 7 / 8;
+  }
+  &__elem-Zina_relatives {
+    grid-column: -2 / -1;
+    grid-row: 7 / 8;
+  }
+
+  //------grandmother
+  &__elem-grandmother_mother {
+    grid-column: 11 / 12;
+    grid-row: 9 / 10;
+  }
+  &__elem-grandmother_father {
+    grid-column: 13 / 14;
+    grid-row: 9 / 10;
+  }
+  &__elem-grandmother_relatives {
+    grid-column: -2 / -1;
+    grid-row: 9 / 10;
+  }
+  //------pra-grandmother
+  &__elem-pra-grandmother_mother {
+    grid-column: 11 / 12;
+    grid-row: 11 / 12;
+  }
+  &__elem-pra-grandmother_father {
+    grid-column: 13 / 14;
+    grid-row: 11 / 12;
+  }
+  &__elem-pra-grandmother_relatives {
+    grid-column: -2 / -1;
+    grid-row: 11 / 12;
+  }
+  //------------------ Стрелки -------\\
+  &__elem_1 {
+    // border-left: 2px solid yellow;
+    grid-column: 7 / 10;
+    grid-row: 2 / 3;
+  }
+  &__elem_2 {
+    // border-left: 2px solid yellow;
+    grid-column: 7 / 10;
+    grid-row: 4 / 5;
+  }
+  &__elem_3 {
+    // border-left: 2px solid yellow;
+    grid-column: 7 / 10;
+    grid-row: 6 / 7;
+  }
+  &__elem_4 {
+    // border-left: 2px solid yellow;
+    grid-column: 7 / 10;
+    grid-row: 8 / 9;
+  }
+  &__elem_5 {
+    // border-left: 2px solid yellow;
+    grid-column: 7 / 10;
+    grid-row: 10 / 11;
+  }
+}
