@@ -1,0 +1,42 @@
+body {
+  @include font();
+  position: relative;
+}
+
+.container {
+  max-width: 85vw;
+  margin: 0 auto;
+}
+
+.title {
+  @include title();
+  letter-spacing: 2px;
+  text-shadow: $text-shadow;
+}
+
+#photos {
+  @include centerTL();
+  width: 85vw;
+  // padding: 60px 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 16rem;
+  grid-row-gap: 20vh;
+}
+.photo {
+  opacity: 0;
+  width: 130px;
+  height: 130px;
+  overflow: hidden;
+  margin: auto;
+  border-radius: 50%;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+.animation-photo {
+  animation: fade-photo 5s ease-in-out 1;
+}

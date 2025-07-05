@@ -1,0 +1,53 @@
+body {
+  background: url("../img/d_1.png") center center/cover no-repeat;
+  background-attachment: fixed;
+}
+
+.tree {
+  width: 100vw;
+  height: 100vh;
+  &__wrap {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(50px, 1fr) 1rem) minmax(50px, 1fr);
+    grid-template-rows: repeat(11, minmax(calc(100vh / 6), 1fr) 1rem) minmax(
+        calc(100vh / 6),
+        1fr
+      );
+    // grid-template-rows: repeat(11, 100px 1rem) minmax(100px, 1fr);
+    margin-top: 1.8rem;
+    padding: 2rem 4rem;
+  }
+  &__elem {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0.2rem;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid green;
+    transition: 1s;
+    &-img {
+      @include centerTL();
+      width: auto;
+      height: 50vh;
+      z-index: 10;
+    }
+    &:hover {
+      transform: scale(2);
+      margin-top: -1.5rem;
+      margin-bottom: -1.5rem;
+      padding-bottom: 0rem;
+      z-index: 1;
+      .tree__name {
+        transform: scale(0.7);
+      }
+    }
+  }
+  &__name {
+    // font-size: 1.1vw;
+    font-size: calc(0.5vw + 0.5vh + 0.1vmin);
+    font-weight: bold;
+    color: $main;
+  }
+}
