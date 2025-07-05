@@ -1,18 +1,18 @@
 1. Устанавливаем GIT
 2.
-3. npm init Создание .JSON-файлf в каталог проекта
+3.
 4. git init Запускаем git
 5. git config --local user.name "Martin937" Объявляем свое имя
 6. git config --local user.email "Martin937@yandex.ru" Объявляем свой имейл
 7. git config --local core.autocrlf true Параметры установки окончаний строк
 8. git config --local core.safecrlf warn Параметры установки окончаний строк
 9. git config --local core.quotepath off Установка отображения unicode
-10. git status Посмотреть состояние
-11. git add -A Добавить все файлы
-12. git commit -a -m”message” Создание контрольной точки
-13. git add -A + git commit -a -m”message” Вводить после внесения всех изменений
-14. git log Посмотреть изменения
-15.
+10.
+11. git status Посмотреть состояние
+12. git add -A Добавить все файлы
+13. git commit -a -m”message” Создание контрольной точки
+14. git add -A + git commit -a -m”message” Вводить после внесения всех изменений
+15. git log Посмотреть изменения
 16.
 17. Создаём репозиторий на GITHUB и связываем его с проектом
 18.
